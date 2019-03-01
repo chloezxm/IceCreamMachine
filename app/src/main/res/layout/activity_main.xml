@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Your name" />
+
+    <CheckBox
+        android:id="@+id/with_chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="With extra chocolate" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/large_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeSize"
+            android:text="Large" />
+
+        <RadioButton
+            android:id="@+id/medium_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeSize"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/small_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeSize"
+            android:text="Small" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/other_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comments (optional)" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="submit" />
+
+
+</LinearLayout>
